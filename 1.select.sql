@@ -16,7 +16,7 @@
 
 -- Selecionar todos os elementos/colunas da tabelo person.person_
 SELECT * 
-FROM person.person;
+FROM person.person; --Ira retornar todas as colunas da tabela com seus respectivos dados;
 
 -- Selecionar todos os dados da coluna title da tabela person.person_
 SELECT Title --Especificando que quero pegar os dados da coluna Title da tabela person.person;
@@ -40,8 +40,8 @@ SELECT *
 FROM Person.EmailAddress;
 
 /* Exercicio:
-        A equipe de marketing precisa fazer uma pesquisa sobre os nomes mais comuns de seus clientes e precisa do nome e sobre-
-        nome de todos os clientes que estao cadastrados no sistema.*/
+        A equipe de marketing precisa fazer uma pesquisa sobre os nomes mais comuns de seus clientes 
+        e precisa do nome e sobrenome de todos os clientes que estao cadastrados no sistema.*/
 
     --RESOLUÇAO:
         SELECT FirstName,LastName --Selecionando ambas as colunas;
