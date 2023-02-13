@@ -24,8 +24,8 @@ SELECT DISTINCT FirstName,LastName
 FROM person.person; --Posso ate tentar usar assim, mas nao sei se é correto, pois o Lastname ainda 
                     --fica com nomes duplicados;
 
-/*Logo, o DISTINCT irá remover os dados deplicados de uma coluna, dados unicos de uma coluna de 
-uma tabela especifica*/
+/*Logo, o DISTINCT irá remover os dados deplicados de uma coluna, retornando os dados unicos de uma 
+coluna de uma tabela especifica*/
 
 /*EXECICIO: 
         Quantos nomes e sobrenomes unicos nos temos em nossa tabela Person.Person*/
