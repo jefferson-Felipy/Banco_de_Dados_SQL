@@ -73,7 +73,7 @@ WHERE Color <> 'Black';
 
             SELECT Name
             FROM Production.Product
-            WHERE weight > 500 and weight <= 700;
+            WHERE weight > 500 and weight <= 700; --Vai retornar os elementos de acordo com o WHERE;
 
     --RESOLUÇAO 2:
 
