@@ -59,8 +59,45 @@ WHERE Color <> 'Black';
 --Numeros sao inseridos assim -> 9, ou seja, normal;
 
 /*EXERCICIO:
-        A equipe de produçao de produtos precisa do nome de todos as peças que pesam mais que 500kg
-        mas não mais que 700kg para inspeção;*/
+        1- A equipe de produçao de produtos precisa do nome de todos as peças que pesam mais que 500kg
+        mas não mais que 700kg para inspeção;
 
-        --RESOLUÇAO:
-        
+        2- Foi pedido pelo marketing uma relação de todos os empregados(emplayees) que sao casados 
+        (single = solteiros, married = casado) e são assalariados(salaried).
+
+        3- Um usuario chamado Peter Krebs está devendo um pagamento, consiga o E-mail dele para que possamos enviar uma cobrança.
+        (terei que usar a tabela person.person e depois a tabela person.emailaddress);
+*/
+
+    --RESOLUÇAO 1:
+
+            SELECT Name
+            FROM Production.Product
+            WHERE weight > 500 and weight <= 700;
+
+    --RESOLUÇAO 2:
+
+            SELECT *
+            FROM HumanResources.Employee
+            WHERE MaritalStatus = 'M' and SalariedFlag = 1;
+
+    --RESOLUÇAO 3:
+            SELECT *
+            FROM Person.Person
+            WHERE FirstName = 'Peter' and LastName = 'Krebs';
+
+            SELECT * 
+            FROM Person.EmailAddress;
+
+            SELECT *
+            FROM Person.EmailAddress
+            WHERE BusinessEntityID = 26;
+
+
+            SELECT EmailAddress
+            FROM person.EmailAddress
+            WHERE BusinessEntityID = 26;
+
+            SELECT ModifiedDate
+            FROM Person.EmailAddress
+            WHERE BusinessEntityID = 26;                    
