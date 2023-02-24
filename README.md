@@ -5,7 +5,7 @@ com exerciocios feitos;</h5>
 
 <h2>Comando já aprendidos</h2>
 <p>Módulo 1:</p>
-<ul>
+<details>
   <li> 1.SELECT </li>
   <Li> 2.DISTINCT</li>
   <Li> 3.WHERE</li>
@@ -15,6 +15,8 @@ com exerciocios feitos;</h5>
   <Li> 7.BETWEEN</li>
   <Li> 8.IN</li>
   <Li> 9.LIKE</li>
-</ul>
+</details>
 
 <p>Módulo 2:</p>
+<details>
+</details>
